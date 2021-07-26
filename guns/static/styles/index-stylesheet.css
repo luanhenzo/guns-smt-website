@@ -1,0 +1,90 @@
+html {
+    background: #103c66;
+    font-family: Nunito, sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+#menu {
+    padding: 3px 3px 3px 20px;
+    display: flex;
+    background: #103c66;
+    height: 8vh;
+}
+
+#navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: #9C1A1C;
+    margin-left: 20px;
+    width: 100%;
+}
+
+#navigation:last-child {
+    margin-right: 20px;
+}
+
+#navigation>button {
+    display: inline;
+    background: whitesmoke;
+}
+
+#guns-brand {
+    height: auto;
+    width: auto;
+}
+
+#guns-logo-container {
+    filter: brightness(40%);
+    display: flex;
+    justify-content: center;
+    height: 92vh;
+    background: white;
+}
+
+#cards-container {
+    display: flex;
+}
+
+.card {
+    shape-outside: inherit;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    background: whitesmoke;
+}
+
+.card-title {
+    margin: 0px;
+    text-align: center;
+}
+
+.card-img {
+    height: auto;
+    width: 100%;
+}
+
+#call-us-container {
+    background: whitesmoke;
+}
+
+#call-us {
+    padding: 5px;
+    display: flex;
+    border: 1px solid gray;
+    box-shadow: 6px 4px 2px 1px rgba(0, 0, 255, .2);
+    margin: auto 10vw;
+}
+
+label {
+
+}
+
+input {
+    height: auto;
+    width: 100%;
+}
+
