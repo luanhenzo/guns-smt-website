@@ -1,40 +1,49 @@
 html {
     background: #103c66;
     font-family: Nunito, sans-serif;
+    font-size: 62.5%;
 }
 
 body {
     margin: 0px;
+    font-size: 2.0rem;
 }
 
-#menu {
-    padding: 3px 3px 3px 20px;
+.nav-bar {
+    padding: 0px 3px 0px 20px;
     display: flex;
-    background: #103c66;
-    height: 8vh;
+    height: 10vh;
 }
 
-#navigation {
+.nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background: #9C1A1C;
+    /*background: #9C1A1C;*/
     margin-left: 20px;
     width: 100%;
 }
 
-#navigation:last-child {
+.nav:last-child {
     margin-right: 20px;
 }
 
-#navigation>button {
-    display: inline;
-    background: whitesmoke;
+.nav>button {
+    height: 100%;
+    background: none;
+    border: none;
+    color: white;
 }
 
-#guns-brand {
+.nav>button:hover {
+    background: white;
+    color: #103c66;
+}
+
+.brand {
     height: auto;
     width: auto;
+    padding: 3px 0px 3px 0px;
 }
 
 #guns-logo-container {
@@ -57,7 +66,7 @@ body {
     background: whitesmoke;
 }
 
-.card-title {
+.title {
     margin: 0px;
     text-align: center;
 }
@@ -68,23 +77,70 @@ body {
 }
 
 #call-us-container {
-    background: whitesmoke;
+    align-items: center;
 }
 
 #call-us {
+    background: whitesmoke;
     padding: 5px;
     display: flex;
+    flex-direction: column;
     border: 1px solid gray;
+    border-radius: 1em;
     box-shadow: 6px 4px 2px 1px rgba(0, 0, 255, .2);
     margin: auto 10vw;
 }
 
-label {
-
+.input {
+    height: 1gd;
 }
 
-input {
-    height: auto;
-    width: 100%;
+#office-hours-and-address-container {
+    background: whitesmoke;
+    display: flex;
+    padding: 1em 1em 1em 1em;
 }
 
+#office-hours {
+    border: 1px solid black;
+    flex: 1;
+}
+
+#address {
+    border: 1px solid black;
+    flex: 2;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex.center {
+    justify-content: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul.no-style-type {
+    list-style-type: none;
+}
+
+.txt-align.center {
+    text-align: center;
+}
+
+.txt-align.right {
+    text-align: right;
+}
+
+.txt-align.left {
+    text-align: left;
+}

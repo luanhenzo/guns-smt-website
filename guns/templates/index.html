@@ -14,57 +14,133 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+{#    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNIoNwpr-V7piBxRzTNipPxhed3SOG4ow&callback=initMap"></script>#}
 </head>
 <body>
-    <div id="menu">
-        <img id="guns-brand" src="../static/images/guns_brand.png" draggable="false">
-        <nav id="navigation">
-            <button>Contate-nos</button>
-            <button>Atendimento</button>
-            <button>Associe-se</button>
+    <div class="nav-bar">
+        <img class="brand" src="../static/images/guns_brand.png" draggable="false">
+        <nav class="nav">
+            <button><strong>CONTATO</strong></button>
+            <button><strong>ATENDIMENTO</strong></button>
+            <button><strong>ASSOCIE-SE</strong></button>
         </nav>
     </div>
+
     <div id="guns-logo-container">
         <img id="guns-logo" src="../static/images/guns.png" draggable="false">
     </div>
-    <br>
+
     <div id="cards-container">
         <div class="card">
-            <h1 class="card-title">Segurança</h1>
+            <h1 class="title">Segurança</h1>
             <hr>
             <img class="card-img" src="//unsplash.it/300/200">
             <hr>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium corporis deserunt dicta doloribus eius eveniet, id ipsa libero mollitia nihil nisi odit optio perferendis quam repellat repudiandae rerum sequi voluptatibus. Eos et in inventore ipsa laudantium ratione recusandae similique totam vero voluptatibus! Adipisci aliquam error id neque possimus praesentium rerum.
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium corporis deserunt dicta doloribus eius eveniet, id ipsa libero mollitia nihil nisi odit optio perferendis quam repellat repudiandae rerum sequi voluptatibus. Eos et in inventore ipsa laudantium ratione recusandae similique totam vero voluptatibus! Adipisci aliquam error id neque possimus praesentium rerum.</p>
         </div>
         <div class="card">
-            <h1 class="card-title">Segurança</h1>
+            <h1 class="title">Segurança</h1>
             <hr>
             <img class="card-img" src="//unsplash.it/300/200">
             <hr>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam asperiores assumenda culpa delectus deserunt dicta ea earum enim error ex fugiat id illo, ipsa libero maiores minus numquam, optio perferendis, porro quia sint totam ut vel voluptates! Adipisci alias, aut ea facilis porro quo quod repellat reprehenderit tempore voluptatum.
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium corporis deserunt dicta doloribus eius eveniet, id ipsa libero mollitia nihil nisi odit optio perferendis quam repellat repudiandae rerum sequi voluptatibus. Eos et in inventore ipsa laudantium ratione recusandae similique totam vero voluptatibus! Adipisci aliquam error id neque possimus praesentium rerum.</p>
         </div>
         <div class="card">
-            <h1 class="card-title">Segurança</h1>
+            <h1 class="title">Segurança</h1>
             <hr>
             <img class="card-img" src="//unsplash.it/300/200">
             <hr>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolorum eaque eius fuga ipsa modi molestiae nemo non officiis repellendus. Dolor eum expedita, laudantium maxime non reiciendis repudiandae! Ad asperiores quaerat repudiandae totam? Asperiores corporis eius magnam sit, velit vitae. A cum, dignissimos facere iste molestiae neque quasi rerum veniam?
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolorum eaque eius fuga ipsa modi molestiae nemo non officiis repellendus. Dolor eum expedita, laudantium maxime non reiciendis repudiandae! Ad asperiores quaerat repudiandae totam? Asperiores corporis eius magnam sit, velit vitae. A cum, dignissimos facere iste molestiae neque quasi rerum veniam?</p>
         </div>
     </div>
-    <br>
+
     <div id="call-us-container">
         <br>
-        <div id="call-us">
-            <form>
-                <label for="your-name">Seu nome.</label>
-                <input id="your-name" name="your-name" type="text">
-                <br>
-                <br>
-                <label for="email">Seu e-mail.</label>
-                <input id="email" name="email" type="email">
-            </form>
-        </div>
+        <form id="call-us">
+            <h1 class="title" style="margin: 0; padding: 0">Fale conosco</h1>
+            <label for="your-name">Seu nome.</label>
+            <input id="your-name" name="your-name" type="text" class="input">
+            <br>
+            <label for="email">Seu e-mail.</label>
+            <input id="email" name="email" type="email" class="input">
+            <br>
+            <label for="description">Dúvida? Sugestão? Elogio ou crítica? Escreva aqui em baixo.</label>
+            <textarea id="description" name="description" placeholder="Muito prazer. Me chamo..."></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
     <br>
+    <div id="office-hours-container">
+
+    </div>
+    </div>
+
+{#    <div id="office-hours-and-address-container">#}
+{#        <div id="office-hours">#}
+{#            <h1 class="title">Atendimento</h1>#}
+{#            <div class="flex center">#}
+{#                <ul class="txt-align right no-style-type" style="font-size: 2.1rem">#}
+{#                    <li>Domingo:</li>#}
+{#                    <li>Segunda:</li>#}
+{#                    <li>Terça:</li>#}
+{#                    <li>Quarta:</li>#}
+{#                    <li>Quinta:</li>#}
+{#                    <li>Sexta:</li>#}
+{#                    <li>Sábado:</li>#}
+{#                </ul>#}
+{#                <div style="width: 3%"></div>#}
+{#                <ul class="no-style-type" style="font-size: 2.1rem">#}
+{#                    <li>Fechado</li>#}
+{#                    <li>Fechado</li>#}
+{#                    <li>18h00 às 22h00</li>#}
+{#                    <li>18h00 às 22h00</li>#}
+{#                    <li>18h00 às 22h00</li>#}
+{#                    <li>18h00 às 22h00</li>#}
+{#                    <li>13h30 às 17h00</li>#}
+{#                </ul>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div style="width: 3%"></div>#}
+{#        <div id="address">#}
+{#            <h1 class="title">Estamos aqui</h1>#}
+{#            <ul class="no-style-type">#}
+{#                <li>Rua Augusto Frederido Markus, nº 830</li>#}
+{#                <li>Bairro das Indústrias</li>#}
+{#                <li>Estrela, RS</li>#}
+{#            </ul>#}
+{#        </div>#}
+{#    </div>#}
+
+    <div class="flex column" style="background: whitesmoke">
+        <h1 class="title">Atendimento</h1>
+        <div class="flex">
+            <div class="flex center">
+                <ul class="txt-align right no-style-type" style="font-size: 2.1rem">
+                    <li>Domingo:</li>
+                    <li>Segunda:</li>
+                    <li>Terça:</li>
+                    <li>Quarta:</li>
+                    <li>Quinta:</li>
+                    <li>Sexta:</li>
+                    <li>Sábado:</li>
+                </ul>
+                <div style="width: 3%"></div>
+                <ul class="no-style-type" style="font-size: 2.1rem">
+                    <li>Fechado</li>
+                    <li>Fechado</li>
+                    <li>18h00 às 22h00</li>
+                    <li>18h00 às 22h00</li>
+                    <li>18h00 às 22h00</li>
+                    <li>18h00 às 22h00</li>
+                    <li>13h30 às 17h00</li>
+                </ul>
+            </div>
+            <div><iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1787.5471026168784!2d-51.96351886433686!3d-29.477912192249224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x951c6322c02bf62d%3A0x76e7f3554c1b9a32!2sGuns%20Muni%C3%A7%C3%B5es%20e%20Treinamentos%2C%20Av.%20Augusto%20Frederico%20Markus%2C%20800%20das%20-%20Ind%C3%BAstrias%2C%20Estrela%20-%20RS%2C%2095880-000!3m2!1d-29.477859799999997!2d-51.9624811!5e0!3m2!1spt-BR!2sbr!4v1627330961389!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Rua Augusto Frederido Markus, nº 830 - Bairro das Indústrias - Estrela, RS</p>
     </div>
 </body>
 </html>
