@@ -1,102 +1,63 @@
 <!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible"
-          content="ie=edge">
-    <link rel="stylesheet"
-          href="../static/styles/index-stylesheet.css">
-    <title>{% block title %}Guns SMT{% endblock %}</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible"
+              content="ie=edge">
+        <link rel="stylesheet"
+              href="../static/styles/index-stylesheet.css">
+        <title>{% block title %}Guns SMT{% endblock %}</title>
 
-    {# Nunito font #}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="nav-bar">
-        <img class="brand" src="../static/images/guns_brand.png" draggable="false">
-        <nav class="nav">
-            <button><strong>CONTATO</strong></button>
-            <button><strong>ATENDIMENTO</strong></button>
-            <button><strong>ASSOCIE-SE</strong></button>
-        </nav>
-    </div>
+        {# Nunito font #}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        {# Navigation bar #}
+        <div id="nav-bar">
+            {# Brand image #}
 
-    <div id="guns-logo-container">
-        <img id="guns-logo" src="../static/images/guns.png" draggable="false">
-    </div>
+            <a id="brand" href="{{ url_for('index.index') }}" style="display: flex;">
+                <img src="../static/images/guns_brand.png" draggable="false">
+            </a>
+            
+            {# Navigation menu #}
+            <nav id="nav">
+                <button><strong>CONTATO</strong></button>
+                <button><strong>ATENDIMENTO</strong></button>
+                <button><strong>ASSOCIE-SE</strong></button>
+            </nav>
+            
+            {# Contact #}
+            <a id="phone-contact" href="tel:+55 51 9 8927-586">9 8927-5868</a>
 
-    <div id="cards-container">
-        <div class="card">
-            <h1 class="title">Segurança</h1>
-            <hr>
-            <img class="card-img" src="//unsplash.it/300/200">
-            <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium corporis deserunt dicta doloribus eius eveniet, id ipsa libero mollitia nihil nisi odit optio perferendis quam repellat repudiandae rerum sequi voluptatibus. Eos et in inventore ipsa laudantium ratione recusandae similique totam vero voluptatibus! Adipisci aliquam error id neque possimus praesentium rerum.</p>
         </div>
-        <div class="card">
-            <h1 class="title">Segurança</h1>
-            <hr>
-            <img class="card-img" src="//unsplash.it/300/200">
-            <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium corporis deserunt dicta doloribus eius eveniet, id ipsa libero mollitia nihil nisi odit optio perferendis quam repellat repudiandae rerum sequi voluptatibus. Eos et in inventore ipsa laudantium ratione recusandae similique totam vero voluptatibus! Adipisci aliquam error id neque possimus praesentium rerum.</p>
-        </div>
-        <div class="card">
-            <h1 class="title">Segurança</h1>
-            <hr>
-            <img class="card-img" src="//unsplash.it/300/200">
-            <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolorum eaque eius fuga ipsa modi molestiae nemo non officiis repellendus. Dolor eum expedita, laudantium maxime non reiciendis repudiandae! Ad asperiores quaerat repudiandae totam? Asperiores corporis eius magnam sit, velit vitae. A cum, dignissimos facere iste molestiae neque quasi rerum veniam?</p>
-        </div>
-    </div>
 
-    <div class="flex">
-        <div id="office-hours" style="flex: 1;">
-            <h1 class="title">Atendimento</h1>
-            <div class="flex center">
-                <ul class="txt-align right no-style-type" style="font-size: 2.1rem">
-                <li>Domingo</li>
-                <li>Segunda</li>
-                <li>Terça</li>
-                <li>Quarta</li>
-                <li>Quinta</li>
-                <li>Sexta</li>
-                <li>Sábado</li>
-            </ul>
-                <div style="width: 5%"></div>
-                <ul class="no-style-type" style="font-size: 2.1rem; white-space: nowrap">
-                <li>Fechado</li>
-                <li>Fechado</li>
-                <li>18h00 às 22h00</li>
-                <li>18h00 às 22h00</li>
-                <li>18h00 às 22h00</li>
-                <li>18h00 às 22h00</li>
-                <li>13h30 às 17h00</li>
-            </ul>
-            </div>
+        {# Introduction container #}
+        <div id="intro-container">
+            <img src="static/images/guns.png">
         </div>
-        <form id="call-us" style="flex: 2;">
-            <h1 class="title">Fale conosco</h1>
-            <label for="your-name">Seu nome.</label>
-            <input id="your-name" name="your-name" type="text" class="input">
-            <br>
-            <label for="email">Seu e-mail.</label>
-            <input id="email" name="email" type="email" class="input">
-            <br>
-            <label for="description">Dúvida? Sugestão? Elogio ou crítica? Escreva aqui em baixo.</label>
-            <textarea id="description" name="description" placeholder="Muito prazer. Me chamo..."></textarea>
-            <br>
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1787.5471026168784!2d-51.96351886433686!3d-29.477912192249224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x951c6322c02bf62d%3A0x76e7f3554c1b9a32!2sGuns%20Muni%C3%A7%C3%B5es%20e%20Treinamentos%2C%20Av.%20Augusto%20Frederico%20Markus%2C%20800%20das%20-%20Ind%C3%BAstrias%2C%20Estrela%20-%20RS%2C%2095880-000!3m2!1d-29.477859799999997!2d-51.9624811!5e0!3m2!1spt-BR!2sbr!4v1627330961389!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0; width: 100%" allowfullscreen="" loading="lazy"></iframe>
+        {# Call us #}
+        <div class="flex bg-red">
+            <h1>FALE CONOSCO</h1>
+            <form class="bg-purple" style="justify-self: right">
+                <label>SEU NOME</label>
+                <input type="email" placeholder="Seu e-mail...">
+            </form>
+        </div>
 
-    <div class="footer">
-        <p>Rua Augusto Frederido Markus, nº 830 - Bairro das Indústrias - Estrela, RS</p>
-    </div>
-</body>
+        {# Google maps #}
+        <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1787.5471026168784!2d-51.96351886433686!3d-29.477912192249224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x951c6322c02bf62d%3A0x76e7f3554c1b9a32!2sGuns%20Muni%C3%A7%C3%B5es%20e%20Treinamentos%2C%20Av.%20Augusto%20Frederico%20Markus%2C%20800%20das%20-%20Ind%C3%BAstrias%2C%20Estrela%20-%20RS%2C%2095880-000!3m2!1d-29.477859799999997!2d-51.9624811!5e0!3m2!1spt-BR!2sbr!4v1627330961389!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0; width: 100%" allowfullscreen="" loading="lazy"></iframe>
+
+        {# Footer #}
+        <div id="footer" class="flex column">
+            <p class="txt-align center" style="font-size: 1.6rem">Rua Augusto Frederido Markus, nº 830<br>
+                                        Bairro das Indústrias<br>
+                                        Estrela, RS</p>
+        </div>
+    </body>
 </html>

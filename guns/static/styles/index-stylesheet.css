@@ -1,120 +1,102 @@
+/* Base */
 html {
-    background: whitesmoke;
+    margin: 0;
+    padding: 0;
     font-family: Nunito, sans-serif;
     font-size: 62.5%;
 }
 
 body {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     font-size: 2.0rem;
+
+    background-color: whitesmoke;
 }
 
-.nav-bar {
-    padding: 0px 3px 0px 20px;
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Identifies */
+#nav-bar {
     display: flex;
     height: 10vh;
+    background: #103c66;
 }
 
-.nav {
+#brand {
+    height: auto;
+    width: auto;
+    margin: 0 1em;
+    padding: 0.5em;
+}
+
+#nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background: #9C1A1C;
-    margin-left: 20px;
+    /*background: #9C1A1C;*/
     width: 100%;
+    height: 100%;
 }
 
-.nav:last-child {
-    margin-right: 20px;
-}
-
-.nav>button {
+#nav>button {
     height: 100%;
     background: none;
     border: none;
     color: white;
 }
 
-.nav>button:hover {
+#nav>button:hover {
     background: white;
     color: #103c66;
 }
 
-.brand {
-    height: auto;
-    width: auto;
-    padding: 3px 0px 3px 0px;
+#phone-contact {
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+    align-self: center;
+    margin: auto 1em;
 }
 
-#guns-logo-container {
+#phone-contact::before {
+    content: '(51) ';
+    font-size: 70%;
+}
+
+#intro-container {
     filter: brightness(40%);
     display: flex;
     justify-content: center;
-    height: 92vh;
+    height: 86vh;
     background: white;
+    padding: 2vh 0;
 }
 
-#cards-container {
-    display: flex;
+#google-map {
+    margin: 0;
 }
 
-.card {
-    color: white;
-    shape-outside: inherit;
-    padding: 5px;
-    margin: 10px;
-    border-radius: 10px;
+#footer {
     background: #103c66;
-    border: 1px solid black;
 }
 
+
+
+
+
+
+
+
+
+
+/* Classes */
 .title {
     margin: 0px;
     text-align: center;
-}
-
-.card-img {
-    height: auto;
-    width: 100%;
-}
-
-#call-us-container {
-    align-items: center;
-}
-
-#call-us {
-    background: whitesmoke;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    border-radius: 1em;
-    box-shadow: 6px 4px 2px 1px rgba(0, 0, 255, .2);
-    margin: 1em;
-}
-
-.input {
-    height: 1gd;
-}
-
-#office-hours-and-address-container {
-    background: whitesmoke;
-    display: flex;
-    padding: 1em 1em 1em 1em;
-}
-
-#office-hours {
-    background: whitesmoke;
-    padding: 5px;
-    border: 1px solid black;
-    border-radius: 1em;
-    /*box-shadow: 6px 4px 2px whitesmoke;*/
-    margin: 1em;
-}
-
-#address {
-    border: 1px solid black;
-    flex: 2;
 }
 
 .flex {
@@ -128,11 +110,6 @@ body {
 
 .flex.center {
     justify-content: center;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
 }
 
 ul.no-style-type {
@@ -149,4 +126,16 @@ ul.no-style-type {
 
 .txt-align.left {
     text-align: left;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-darkred {
+    background-color: darkred;
+}
+
+.bg-purple {
+    background-color: rebeccapurple;
 }
