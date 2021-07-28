@@ -1,5 +1,5 @@
 html {
-    background: #103c66;
+    background: whitesmoke;
     font-family: Nunito, sans-serif;
     font-size: 62.5%;
 }
@@ -19,7 +19,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    /*background: #9C1A1C;*/
+    background: #9C1A1C;
     margin-left: 20px;
     width: 100%;
 }
@@ -59,11 +59,13 @@ body {
 }
 
 .card {
+    color: white;
     shape-outside: inherit;
     padding: 5px;
     margin: 10px;
     border-radius: 10px;
-    background: whitesmoke;
+    background: #103c66;
+    border: 1px solid black;
 }
 
 .title {
@@ -85,10 +87,10 @@ body {
     padding: 5px;
     display: flex;
     flex-direction: column;
-    border: 1px solid gray;
+    border: 1px solid black;
     border-radius: 1em;
     box-shadow: 6px 4px 2px 1px rgba(0, 0, 255, .2);
-    margin: auto 10vw;
+    margin: 1em;
 }
 
 .input {
@@ -102,8 +104,12 @@ body {
 }
 
 #office-hours {
+    background: whitesmoke;
+    padding: 5px;
     border: 1px solid black;
-    flex: 1;
+    border-radius: 1em;
+    /*box-shadow: 6px 4px 2px whitesmoke;*/
+    margin: 1em;
 }
 
 #address {
