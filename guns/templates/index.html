@@ -26,9 +26,9 @@
             
             {# Navigation menu #}
             <nav id="nav">
-                <button><strong>CONTATO</strong></button>
-                <button><strong>ATENDIMENTO</strong></button>
-                <button><strong>ASSOCIE-SE</strong></button>
+                <a href="#call-us"><button type="button"><strong>CONTATO</strong></button></a>
+                <button type="button"><strong>ATENDIMENTO</strong></button>
+                <button type="button"><strong>ASSOCIE-SE</strong></button>
             </nav>
             
             {# Contact #}
@@ -42,11 +42,29 @@
         </div>
 
         {# Call us #}
-        <div class="flex bg-red">
-            <h1>FALE CONOSCO</h1>
-            <form class="bg-purple" style="justify-self: right">
-                <label>SEU NOME</label>
-                <input type="email" placeholder="Seu e-mail...">
+        <div id="call-us">
+            <h1 id="call-us-title">FALE CONOSCO</h1>
+            <form id="call-us-form" style="justify-self: right">
+                {# Name input #}
+                <label for="name">SEU NOME</label>
+                <input type="text" id="name" class="input" placeholder="Seu nome...">
+
+                <br>
+
+                {# Email input #}
+                <label for="email">SEU E-MAIL</label>
+                <input type="email" id="email" class="input" placeholder="Seu e-mail...">
+
+                <br>
+
+                {# Description input #}
+                <label for="description">DESCRIÇÃO</label>
+                <textarea id="description" class="input" name="description" placeholder="Fale sobre o que desejas!"></textarea>
+
+                <br>
+
+                {# Send button #}
+                <button id="call-us-submit" type="button"><strong>ENVIAR</strong></button>
             </form>
         </div>
 

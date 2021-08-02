@@ -1,4 +1,17 @@
 /* Base */
+:root {
+    --input-border: #8b8a8b;
+    --input-focus-h: 245;
+    --input-focus-s: 100%;
+    --input-focus-l: 42%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -11,7 +24,7 @@ body {
     padding: 0;
     font-size: 2.0rem;
 
-    background-color: whitesmoke;
+    background: #103c66;
 }
 
 ul {
@@ -71,9 +84,48 @@ ul {
     filter: brightness(40%);
     display: flex;
     justify-content: center;
-    height: 86vh;
+    height: 90vh;
     background: white;
     padding: 2vh 0;
+}
+
+#call-us {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1em;
+    color: whitesmoke;
+    height: 100vh;
+}
+
+#call-us-title {
+    align-self: flex-start;
+    border-inline-start: 4px whitesmoke solid;
+    padding-inline-start: 1rem;
+    line-height: 1;
+}
+
+#call-us-form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+#description {
+    height: 100%;
+}
+
+#call-us-submit {
+    align-self: flex-start;
+    font-size: 1.6rem;
+    color: gray;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px whitesmoke solid;
+}
+
+#call-us-submit:hover {
+    color: black;
 }
 
 #google-map {
@@ -83,7 +135,6 @@ ul {
 #footer {
     background: #103c66;
 }
-
 
 
 
@@ -138,4 +189,14 @@ ul.no-style-type {
 
 .bg-purple {
     background-color: rebeccapurple;
+}
+
+.input {
+  font-size: 16px;
+  font-size: max(16px, 1em);
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  background-color: #fff;
+  border: 2px solid var(--input-border);
+  border-radius: 4px;
 }
