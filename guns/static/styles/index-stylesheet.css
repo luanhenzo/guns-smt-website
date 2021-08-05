@@ -55,14 +55,18 @@ ul {
     height: 100%;
 }
 
-#nav>button {
-    height: 100%;
-    background: none;
-    border: none;
+#nav>a {
+    display: flex;
+    align-items: center;
+    /*background: red;*/
+    text-decoration: none;
     color: white;
+    height: 100%;
+    font-size: 1.6rem;
+    padding: 1em;
 }
 
-#nav>button:hover {
+#nav>a:hover {
     background: white;
     color: #103c66;
 }
@@ -85,7 +89,7 @@ ul {
     display: flex;
     justify-content: center;
     height: 90vh;
-    background: white;
+    background: white url("../images/guns.png") no-repeat center;
     padding: 2vh 0;
 }
 
@@ -128,8 +132,30 @@ ul {
     color: black;
 }
 
-#google-map {
+#attendance {
+    display: flex;
+    height: 100vh;
+    /*background: red;*/
+}
+
+#office-hours-container {
+    display: flex;
+    flex-direction: column;
+    background: red;
+    flex: 1;
+}
+
+#office-hours-title {
+    align-self: center;
+    border-inline-start: 4px whitesmoke solid;
+    padding-inline-start: 1rem;
+    line-height: 1;
+}
+
+#google-maps {
     margin: 0;
+    flex: 2;
+    height: 100%;
 }
 
 #footer {

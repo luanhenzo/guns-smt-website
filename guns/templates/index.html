@@ -19,16 +19,15 @@
         {# Navigation bar #}
         <div id="nav-bar">
             {# Brand image #}
-
             <a id="brand" href="{{ url_for('index.index') }}" style="display: flex;">
                 <img src="../static/images/guns_brand.png" draggable="false">
             </a>
             
             {# Navigation menu #}
             <nav id="nav">
-                <a href="#call-us"><button type="button"><strong>CONTATO</strong></button></a>
-                <button type="button"><strong>ATENDIMENTO</strong></button>
-                <button type="button"><strong>ASSOCIE-SE</strong></button>
+                <a href="#call-us"><strong>CONTATO</strong></a>
+                <a href="#"><strong>ATENDIMENTO</strong></a>
+                <a href="#"><strong>ASSOCIE-SE</strong></a>
             </nav>
             
             {# Contact #}
@@ -38,7 +37,7 @@
 
         {# Introduction container #}
         <div id="intro-container">
-            <img src="static/images/guns.png">
+{#            <img src="static/images/guns.png">#}
         </div>
 
         {# Call us #}
@@ -69,8 +68,12 @@
         </div>
 
         {# Google maps #}
-        <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1787.5471026168784!2d-51.96351886433686!3d-29.477912192249224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x951c6322c02bf62d%3A0x76e7f3554c1b9a32!2sGuns%20Muni%C3%A7%C3%B5es%20e%20Treinamentos%2C%20Av.%20Augusto%20Frederico%20Markus%2C%20800%20das%20-%20Ind%C3%BAstrias%2C%20Estrela%20-%20RS%2C%2095880-000!3m2!1d-29.477859799999997!2d-51.9624811!5e0!3m2!1spt-BR!2sbr!4v1627330961389!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0; width: 100%" allowfullscreen="" loading="lazy"></iframe>
-
+        <div id="attendance">
+            <div id="office-hours-container">
+                <h1 id="office-hours-title">ATENDIMENTO</h1>
+            </div>
+            <iframe id="google-maps" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1787.5471026168784!2d-51.96351886433686!3d-29.477912192249224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x951c6322c02bf62d%3A0x76e7f3554c1b9a32!2sGuns%20Muni%C3%A7%C3%B5es%20e%20Treinamentos%2C%20Av.%20Augusto%20Frederico%20Markus%2C%20800%20das%20-%20Ind%C3%BAstrias%2C%20Estrela%20-%20RS%2C%2095880-000!3m2!1d-29.477859799999997!2d-51.9624811!5e0!3m2!1spt-BR!2sbr!4v1627330961389!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0; width: 100%" allowfullscreen="" loading="lazy"></iframe>
+        </div>
         {# Footer #}
         <div id="footer" class="flex column">
             <p class="txt-align center" style="font-size: 1.6rem">Rua Augusto Frederido Markus, nº 830<br>
