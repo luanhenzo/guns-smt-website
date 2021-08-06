@@ -10,6 +10,9 @@
               href="../static/styles/index-stylesheet.css">
         <title>{% block title %}Guns SMT{% endblock %}</title>
 
+        {# Bootstrap icons #}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
         {# Nunito font #}
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,13 +40,17 @@
 
         {# Introduction container #}
         <div id="intro-container">
-{#            <img src="static/images/guns.png">#}
+            <h1 id="intro-text">GUNS</h1>
+            <p>Teste</p>
+            {# <img src="static/images/guns.png"> #}
         </div>
 
         {# Call us #}
         <div id="call-us">
-            <h1 id="call-us-title">FALE CONOSCO</h1>
-            <form id="call-us-form" style="justify-self: right">
+            <div id="call-us-title-container">
+                <h1 id="call-us-title">FALE CONOSCO</h1>
+            </div>
+            <form id="call-us-form">
                 {# Name input #}
                 <label for="name">SEU NOME</label>
                 <input type="text" id="name" class="input" placeholder="Seu nome...">
@@ -67,18 +74,16 @@
             </form>
         </div>
 
-        {# Google maps #}
-        <div id="attendance">
-            <div id="office-hours-container">
-                <h1 id="office-hours-title">ATENDIMENTO</h1>
-            </div>
-            <iframe id="google-maps" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1787.5471026168784!2d-51.96351886433686!3d-29.477912192249224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x951c6322c02bf62d%3A0x76e7f3554c1b9a32!2sGuns%20Muni%C3%A7%C3%B5es%20e%20Treinamentos%2C%20Av.%20Augusto%20Frederico%20Markus%2C%20800%20das%20-%20Ind%C3%BAstrias%2C%20Estrela%20-%20RS%2C%2095880-000!3m2!1d-29.477859799999997!2d-51.9624811!5e0!3m2!1spt-BR!2sbr!4v1627330961389!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0; width: 100%" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+        {# Google maps address #}
+        <iframe id="google-maps" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1787.5471026168784!2d-51.96351886433686!3d-29.477912192249224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x951c6322c02bf62d%3A0x76e7f3554c1b9a32!2sGuns%20Muni%C3%A7%C3%B5es%20e%20Treinamentos%2C%20Av.%20Augusto%20Frederico%20Markus%2C%20800%20das%20-%20Ind%C3%BAstrias%2C%20Estrela%20-%20RS%2C%2095880-000!3m2!1d-29.477859799999997!2d-51.9624811!5e0!3m2!1spt-BR!2sbr!4v1627330961389!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0; width: 100%" allowfullscreen="" loading="lazy"></iframe>
+
         {# Footer #}
         <div id="footer" class="flex column">
-            <p class="txt-align center" style="font-size: 1.6rem">Rua Augusto Frederido Markus, nº 830<br>
-                                        Bairro das Indústrias<br>
-                                        Estrela, RS</p>
+            <p class="txt-align center" style="font-size: 1.6rem">
+                Rua Augusto Frederido Markus, nº 830<br>
+                Bairro das Indústrias<br>
+                Estrela, RS
+            </p>
         </div>
     </body>
 </html>

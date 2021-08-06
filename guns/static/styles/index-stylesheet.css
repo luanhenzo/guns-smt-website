@@ -17,6 +17,7 @@ html {
     padding: 0;
     font-family: Nunito, sans-serif;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -30,6 +31,7 @@ body {
 ul {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 /* Identifies */
@@ -64,6 +66,7 @@ ul {
     height: 100%;
     font-size: 1.6rem;
     padding: 1em;
+    transition: 0.3s;
 }
 
 #nav>a:hover {
@@ -85,26 +88,64 @@ ul {
 }
 
 #intro-container {
-    filter: brightness(40%);
+    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 90vh;
     background: white url("../images/guns.png") no-repeat center;
     padding: 2vh 0;
 }
 
+#intro-container::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#intro-text {
+    position: relative;
+    color: whitesmoke;
+    text-align: center;
+}
+
 #call-us {
     display: flex;
-    justify-content: space-between;
-    padding-left: 1em;
     color: whitesmoke;
     height: 100vh;
 }
 
+#call-us-title-container {
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 1em;
+    position: relative;
+    background: url("../images/call-us-bg.jpeg") no-repeat center;
+    background-size: cover;
+    flex: 1;
+}
+
+#call-us-title-container::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
 #call-us-title {
+    position: relative;
     align-self: flex-start;
     border-inline-start: 4px whitesmoke solid;
     padding-inline-start: 1rem;
+    background: rgba(0,0,0,0.6);
     line-height: 1;
 }
 
@@ -113,6 +154,7 @@ ul {
     display: flex;
     flex-direction: column;
     padding: 1em;
+    flex: 2;
 }
 
 #description {
@@ -132,30 +174,10 @@ ul {
     color: black;
 }
 
-#attendance {
-    display: flex;
-    height: 100vh;
-    /*background: red;*/
-}
-
-#office-hours-container {
-    display: flex;
-    flex-direction: column;
-    background: red;
-    flex: 1;
-}
-
-#office-hours-title {
-    align-self: center;
-    border-inline-start: 4px whitesmoke solid;
-    padding-inline-start: 1rem;
-    line-height: 1;
-}
-
 #google-maps {
     margin: 0;
     flex: 2;
-    height: 100%;
+    height: 50vh;
 }
 
 #footer {
@@ -203,18 +225,6 @@ ul.no-style-type {
 
 .txt-align.left {
     text-align: left;
-}
-
-.bg-red {
-    background-color: red;
-}
-
-.bg-darkred {
-    background-color: darkred;
-}
-
-.bg-purple {
-    background-color: rebeccapurple;
 }
 
 .input {
