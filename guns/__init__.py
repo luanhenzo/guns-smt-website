@@ -1,3 +1,5 @@
+import os
+
 from flask import Flask
 
 class DefaultConfig:
@@ -16,5 +18,11 @@ def create_app(config: str = None):
     # Registering Index's Blueprint #
     from .views import index
     app.register_blueprint(index.bp)
+
+    # Send e-mail
+    from .utils.email import read_template, get_email_credentials, send_email
+    template = read_template(os.path.join(app.instance_path, "call_us_email.txt"))
+    email, password = get_email_credentials(os.path.join(app.instance_path, "email-connection.ini"))
+    send_email(email, password, template, "Luan")
 
     return app

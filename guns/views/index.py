@@ -1,7 +1,12 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, request
+
 
 bp = Blueprint('index', __name__)
 
-@bp.route('/')
+@bp.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template('index.html')
+    if request.method == 'POST':
+        call_us_form = request.values.to_dict()
+        return render_template('index.html')
+    else:
+        return render_template('index.html')

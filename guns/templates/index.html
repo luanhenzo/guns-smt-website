@@ -40,9 +40,10 @@
 
         {# Introduction container #}
         <div id="intro-container">
-            <h1 id="intro-text">GUNS</h1>
-            <p>Teste</p>
-            {# <img src="static/images/guns.png"> #}
+{#            <img src="../static/images/guns_brand.png" style="position:relative;" alt="">#}
+{#            <h1 id="intro-text">GUNS</h1>#}
+{#            <p style="color: white; position: relative;">Guns Munições e Treinamentos</p>#}
+             <img src="static/images/guns.png" draggable="false">
         </div>
 
         {# Call us #}
@@ -53,24 +54,24 @@
             <form id="call-us-form">
                 {# Name input #}
                 <label for="name">SEU NOME</label>
-                <input type="text" id="name" class="input" placeholder="Seu nome...">
+                <input type="text" id="name" name="name" class="input" placeholder="Seu nome...">
 
                 <br>
 
                 {# Email input #}
                 <label for="email">SEU E-MAIL</label>
-                <input type="email" id="email" class="input" placeholder="Seu e-mail...">
+                <input type="email" id="email" name="email" class="input" placeholder="Seu e-mail...">
 
                 <br>
 
                 {# Description input #}
                 <label for="description">DESCRIÇÃO</label>
-                <textarea id="description" class="input" name="description" placeholder="Fale sobre o que desejas!"></textarea>
+                <textarea id="description" name="description" class="input"  placeholder="Fale sobre o que desejas!"></textarea>
 
                 <br>
 
                 {# Send button #}
-                <button id="call-us-submit" type="button"><strong>ENVIAR</strong></button>
+                <button id="call-us-submit" type="submit" formmethod="post"><strong>ENVIAR</strong></button>
             </form>
         </div>
 
