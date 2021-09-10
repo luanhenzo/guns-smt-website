@@ -33,5 +33,4 @@ def send_email(connection: EmailConnection, template: Template, name, email, sub
     s = smtplib.SMTP_SSL(connection.host, connection.port)
     s.login(connection.login, connection.password)
     s.send_message(msg)
-    print('ENVIADO!')
     del msg
