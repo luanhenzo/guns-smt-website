@@ -88,30 +88,15 @@ ul {
 }
 
 #intro-container {
-    position: relative;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     height: 90vh;
-    background: white url("../images/guns.png") no-repeat center;
+    background-color: white;
     padding: 2vh 0;
 }
 
-#intro-container::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(0, 0, 0, 0.6);
-}
+#intro-banner {
 
-#intro-text {
-    position: relative;
-    color: whitesmoke;
-    text-align: center;
 }
 
 #call-us {

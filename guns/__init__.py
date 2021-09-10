@@ -1,4 +1,10 @@
+import os
+
 from flask import Flask
+import os
+
+INSTANCE_FOLDER = os.path.join(os.getcwd(), 'instance')
+TEMPLATES_FOLDER = os.path.join(os.getcwd(), r'guns\templates')
 
 class DefaultConfig:
     ENV = "development"

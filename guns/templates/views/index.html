@@ -40,9 +40,7 @@
 
         {# Introduction container #}
         <div id="intro-container">
-            <h1 id="intro-text">GUNS</h1>
-            <p>Teste</p>
-            {# <img src="static/images/guns.png"> #}
+             <img id="intro-banner" src="static/images/guns.png" draggable="false">
         </div>
 
         {# Call us #}
@@ -52,25 +50,30 @@
             </div>
             <form id="call-us-form">
                 {# Name input #}
-                <label for="name">SEU NOME</label>
-                <input type="text" id="name" class="input" placeholder="Seu nome...">
+                <label for="your-name">SEU NOME</label>
+                <input type="text" id="your-name" name="your-name" class="input" placeholder="Seu nome...">
 
                 <br>
 
                 {# Email input #}
-                <label for="email">SEU E-MAIL</label>
-                <input type="email" id="email" class="input" placeholder="Seu e-mail...">
+                <label for="your-email">SEU E-MAIL</label>
+                <input type="email" id="your-email" name="your-email" class="input" placeholder="Seu e-mail...">
+
+                <br>
+
+                <label for="subject">TÍTULO</label>
+                <input type="text" id="subject" name="subject" class="input" placeholder="Uma breve descrição sobre o assunto que quer falar...">
 
                 <br>
 
                 {# Description input #}
-                <label for="description">DESCRIÇÃO</label>
-                <textarea id="description" class="input" name="description" placeholder="Fale sobre o que desejas!"></textarea>
+                <label for="message">MENSAGEM</label>
+                <textarea id="message" name="message" class="input" placeholder="Fale sobre o que deseja..." rows="100"></textarea>
 
                 <br>
 
                 {# Send button #}
-                <button id="call-us-submit" type="button"><strong>ENVIAR</strong></button>
+                <button id="call-us-submit" type="submit" formmethod="post"><strong>ENVIAR</strong></button>
             </form>
         </div>
 
