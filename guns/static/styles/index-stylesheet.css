@@ -39,6 +39,11 @@ ul {
     display: flex;
     height: 10vh;
     background: #103c66;
+    padding: 0 1em;
+}
+
+#hamburger-menu {
+    display: none;
 }
 
 #brand {
@@ -162,6 +167,21 @@ ul {
 
 #footer {
     background: #103c66;
+}
+
+@media (max-width: 900px) {
+    #hamburger-menu {
+        display: flex;
+    }
+    #nav * {
+        display: none;
+    }
+    #phone-contact {
+        display: none;
+    }
+    #call-us-title-container {
+        display: none;
+    }
 }
 
 

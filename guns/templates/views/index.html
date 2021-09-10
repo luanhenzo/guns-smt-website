@@ -21,21 +21,35 @@
     <body>
         {# Navigation bar #}
         <div id="nav-bar">
-            {# Brand image #}
-            <a id="brand" href="{{ url_for('index.index') }}" style="display: flex;">
-                <img src="../static/images/guns_brand.png" draggable="false">
+            {# Hamburger menu #}
+            <a id="hamburger-menu" href="#">
+                <img src="static/images/icons/list.svg" draggable="false">
             </a>
-            
+
+            {# Brand image #}
+            <a id="brand" href="{{ url_for('index.index') }}">
+                <img src="static/images/guns_brand.png" draggable="false">
+            </a>
+
             {# Navigation menu #}
             <nav id="nav">
                 <a href="#call-us"><strong>CONTATO</strong></a>
                 <a href="#"><strong>ATENDIMENTO</strong></a>
                 <a href="#"><strong>ASSOCIE-SE</strong></a>
             </nav>
-            
+
             {# Contact #}
             <a id="phone-contact" href="tel:+55 51 9 8927-586">9 8927-5868</a>
 
+            {# Social medias #}
+            <a href="https://api.whatsapp.com/send?phone=5551993879309&text=Ol%C3%A1%21+Gostaria+de+falar+com+algu%C3%A9m.&lang=pt_br"
+               style="display: inherit; padding: .5em;" target="_blank">
+                <img src="static/images/icons/whatsapp.svg" alt="WhatsApp">
+            </a>
+            <a href="https://www.instagram.com/gunsmt/"
+               style="display: inherit; padding: .5em;" target="_blank">
+                <img src="static/images/icons/instagram.svg" alt="Instagram">
+            </a>
         </div>
 
         {# Introduction container #}
@@ -82,7 +96,7 @@
 
         {# Footer #}
         <div id="footer" class="flex column">
-            <p class="txt-align center" style="font-size: 1.6rem">
+            <p class="txt-align center" style="font-size: 1.6rem; color: white;">
                 Rua Augusto Frederido Markus, nº 830<br>
                 Bairro das Indústrias<br>
                 Estrela, RS
