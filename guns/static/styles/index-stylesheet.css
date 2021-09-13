@@ -57,9 +57,8 @@ ul {
 
 #nav {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: flex-end;
+    align-items: stretch;
     width: 100%;
     height: 100%;
 }
@@ -76,26 +75,23 @@ ul {
     transition: 0.3s;
 }
 
-#nav a:hover {
+#nav>a:hover {
     background: white;
     color: #103c66;
 }
 
-#phone-contact {
-    color: white;
-    text-decoration: none;
-    white-space: nowrap;
-    align-self: center;
-    margin: auto 1em;
-}
-
-#phone-contact::before {
-    content: '(51) ';
-    font-size: 70%;
-}
-
-#contacts {
+#social-medias {
     display: flex;
+    align-items: center;
+}
+
+#social-medias a {
+    height: 100%;
+    padding: 1vh;
+}
+
+#social-medias a img {
+    height: 100%;
 }
 
 #intro-container {
@@ -184,17 +180,31 @@ ul {
 }
 
 @media (max-width: 800px) {
+    #nav-bar {
+        position: relative;
+        justify-content: space-between;
+        z-index: 10;
+}
     #hamburger-menu {
         display: flex;
+        cursor: pointer;
     }
-    #nav * {
-        display: none;
+    #nav {
+        background: #103c66;
+        /*display: flex;*/
+        /*justify-content: space-between;*/
+        /*align-items: stretch;*/
+        position: absolute;
+        height: 10vh;
+        top: 0vh;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        transition: top 1s ease;
     }
-    #phone-contact {
-        display: none;
-    }
-    #contacts {
-        display: none;
+    #intro-container {
+        position: relative;
+        z-index: -2;
     }
     #call-us-title-container {
         display: none;

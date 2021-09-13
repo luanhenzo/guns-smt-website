@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
@@ -7,20 +7,18 @@
         <meta http-equiv="X-UA-Compatible"
               content="ie=edge">
         <link rel="stylesheet"
-              href="../static/styles/index-stylesheet.css">
+              href="static/styles/index-stylesheet.css">
         <title>{% block title %}Guns SMT{% endblock %}</title>
-
-        {# Bootstrap icons #}
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
         {# Nunito font #}
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <script src="static/scripts/hamburger-menu.js" defer></script>
     </head>
     <body>
         {# Navigation bar #}
-        <div id="nav-bar">
+        <header id="nav-bar">
             {# Brand image #}
             <a id="brand" href="{{ url_for('index.index') }}">
                 <img src="static/images/guns_brand.png" draggable="false">
@@ -31,29 +29,27 @@
                 <a href="#call-us"><strong>CONTATO</strong></a>
                 <a href="#"><strong>ATENDIMENTO</strong></a>
                 <a href="#"><strong>ASSOCIE-SE</strong></a>
+                {# Social medias #}
+                <div id="social-medias">
+                    <a id="phone-number" href="#" onclick="closeMenu()">
+                        <img src="static/images/icons/telephone.svg" alt="Telefone">
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=5551993879309&text=Ol%C3%A1%21+Gostaria+de+falar+com+algu%C3%A9m.&lang=pt_br"
+                       target="_blank">
+                        <img src="static/images/icons/whatsapp.svg" alt="WhatsApp">
+                    </a>
+                    <a href="https://www.instagram.com/gunsmt/"
+                       target="_blank">
+                        <img src="static/images/icons/instagram.svg" alt="Instagram">
+                    </a>
+                </div>
             </nav>
 
-            {# Contacts #}
-            <div id="contacts">
-                <a href="tel:+55 51 9 8927-586"
-                   style="display: inherit; padding: .5em;">
-                    <img src="static/images/icons/telephone.svg" alt="Telefone">
-                </a>
-                <a href="https://api.whatsapp.com/send?phone=5551993879309&text=Ol%C3%A1%21+Gostaria+de+falar+com+algu%C3%A9m.&lang=pt_br"
-                   style="display: inherit; padding: .5em;" target="_blank">
-                    <img src="static/images/icons/whatsapp.svg" alt="WhatsApp">
-                </a>
-                <a href="https://www.instagram.com/gunsmt/"
-                   style="display: inherit; padding: .5em;" target="_blank">
-                    <img src="static/images/icons/instagram.svg" alt="Instagram">
-                </a>
-            </div>
-
             {# Hamburger menu #}
-            <a id="hamburger-menu" href="#">
+            <a id="hamburger-menu" onclick="openMenu()">
                 <img src="static/images/icons/list.svg" draggable="false">
             </a>
-        </div>
+        </header>
 
         {# Introduction container #}
         <div id="intro-container">
