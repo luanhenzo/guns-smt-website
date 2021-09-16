@@ -1,12 +1,14 @@
 from flask import Flask
 import os
 
-INSTANCE_FOLDER = os.path.join(os.getcwd(), 'instance')
-TEMPLATES_FOLDER = os.path.join(os.getcwd(), r'guns\templates')
+INSTANCE_FOLDER = os.path.join(os.getcwd(), "instance")
+TEMPLATES_FOLDER = os.path.join(os.getcwd(), r"guns\templates")
+
 
 class DefaultConfig:
     ENV = "development"
     SECRET_KEY = "dev"
+
 
 def create_app(config: str = None):
     app = Flask(__name__, instance_relative_config=True)
@@ -19,6 +21,7 @@ def create_app(config: str = None):
 
     # Registering Index's Blueprint #
     from .views import index
+
     app.register_blueprint(index.bp)
 
     return app
