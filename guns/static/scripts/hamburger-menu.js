@@ -1,9 +1,15 @@
-const menu = document.querySelector('#nav')
+const menu = document.querySelector('#nav');
+let isOpen = false;
 
-function openMenu() {
-    menu.style.top = '10vh'
-}
+function changeMenu() {
+    let menuHeight = menu.offsetHeight
+    console.log(menuHeight)
 
-function closeMenu() {
-    menu.style.top = '0vh'
+    if (!isOpen) {
+        menu.style.top = `${menuHeight}px`;
+        isOpen = true;
+    } else {
+        menu.style.top = '0';
+        isOpen = false;
+    }
 }

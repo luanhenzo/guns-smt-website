@@ -26,12 +26,15 @@
 
             {# Navigation menu #}
             <nav id="nav">
-                <a href="#call-us"><strong>CONTATO</strong></a>
-                <a href="#"><strong>ATENDIMENTO</strong></a>
-                <a href="#"><strong>ASSOCIE-SE</strong></a>
+                {# Nav buttons #}
+                <div id="nav-btns">
+                    <a href="#call-us"><strong>CONTATO</strong></a>
+                    <a href="#"><strong>ATENDIMENTO</strong></a>
+                    <a href="#"><strong>ASSOCIE-SE</strong></a>
+                </div>
                 {# Social medias #}
                 <div id="social-medias">
-                    <a id="phone-number" href="#" onclick="closeMenu()">
+                    <a href="tel:+5551993879309">
                         <img src="static/images/icons/telephone.svg" alt="Telefone">
                     </a>
                     <a href="https://api.whatsapp.com/send?phone=5551993879309&text=Ol%C3%A1%21+Gostaria+de+falar+com+algu%C3%A9m.&lang=pt_br"
@@ -46,7 +49,7 @@
             </nav>
 
             {# Hamburger menu #}
-            <a id="hamburger-menu" onclick="openMenu()">
+            <a id="hamburger-menu" onclick="changeMenu()">
                 <img src="static/images/icons/list.svg" draggable="false">
             </a>
         </header>
