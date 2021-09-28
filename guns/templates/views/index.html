@@ -20,18 +20,21 @@
         {# Navigation bar #}
         <header id="nav-bar">
             {# Brand image #}
-            <a id="brand" href="{{ url_for('index.index') }}">
-                <img src="static/images/guns_brand.png" draggable="false">
-            </a>
+            <div style="display: flex">
+                <a id="brand" href="{{ url_for('index.index') }}">
+                    <img src="static/images/guns_brand.png" draggable="false">
+                </a>
+            </div>
 
             {# Navigation menu #}
             <nav id="nav">
                 {# Nav buttons #}
                 <div id="nav-btns">
-                    <a href="#call-us"><strong>CONTATO</strong></a>
-                    <a href="#"><strong>ATENDIMENTO</strong></a>
+                    <a href="#cursos"><strong>CURSOS</strong></a>
+                    <a href="#atendimento"><strong>ATENDIMENTO</strong></a>
                     <a href="#"><strong>ASSOCIE-SE</strong></a>
                 </div>
+
                 {# Social medias #}
                 <div id="social-medias">
                     <a href="tel:+5551993879309">
