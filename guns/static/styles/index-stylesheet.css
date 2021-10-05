@@ -198,6 +198,9 @@ ul {
         transform: translateZ(-1px) translateY(calc(10vh - 100%));
         transition: top 1s ease;
     }
+    #nav a {
+        pointer-events: none;
+    }
     #nav>* {
         flex-grow: 1;
     }
