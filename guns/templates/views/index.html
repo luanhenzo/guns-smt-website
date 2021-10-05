@@ -62,42 +62,84 @@
             <img id="intro-banner" src="static/images/guns.png" draggable="false">
         </div>
 
-        {# Call us #}
-        <div id="call-us">
-            <div id="call-us-title-container">
-                <h1 id="call-us-title">FALE CONOSCO</h1>
+
+        <main id="atendimento">
+            {# Call us #}
+            <div id="call-us-container">
+                <h1>FALE CONOSCO</h1>
+                <form id="call-us-form">
+                    {# Name input #}
+                    <label for="your-name">SEU NOME</label>
+                    <input type="text" id="your-name" name="your-name" class="input" placeholder="Seu nome...">
+
+                    <br>
+
+                    {# Email input #}
+                    <label for="your-email">SEU E-MAIL</label>
+                    <input type="email" id="your-email" name="your-email" class="input" placeholder="Seu e-mail...">
+
+                    <br>
+
+                    <label for="subject">TÍTULO</label>
+                    <input type="text" id="subject" name="subject" class="input" placeholder="Uma breve descrição sobre o assunto que quer falar...">
+
+                    <br>
+
+                    {# Description input #}
+                    <label for="message">MENSAGEM</label>
+                    <textarea id="message" name="message" class="input" placeholder="Fale sobre o que deseja..." rows="100"></textarea>
+
+                    <br>
+
+                    {# Send button #}
+                    <button id="call-us-submit" type="submit" formmethod="post"><strong>ENVIAR</strong></button>
+                </form>
             </div>
-            <form id="call-us-form">
-                {# Name input #}
-                <label for="your-name">SEU NOME</label>
-                <input type="text" id="your-name" name="your-name" class="input" placeholder="Seu nome...">
 
-                <br>
-
-                {# Email input #}
-                <label for="your-email">SEU E-MAIL</label>
-                <input type="email" id="your-email" name="your-email" class="input" placeholder="Seu e-mail...">
-
-                <br>
-
-                <label for="subject">TÍTULO</label>
-                <input type="text" id="subject" name="subject" class="input" placeholder="Uma breve descrição sobre o assunto que quer falar...">
-
-                <br>
-
-                {# Description input #}
-                <label for="message">MENSAGEM</label>
-                <textarea id="message" name="message" class="input" placeholder="Fale sobre o que deseja..." rows="100"></textarea>
-
-                <br>
-
-                {# Send button #}
-                <button id="call-us-submit" type="submit" formmethod="post"><strong>ENVIAR</strong></button>
-            </form>
-        </div>
-
-        {# Google maps address #}
-        <iframe id="google-maps" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1787.5471026168784!2d-51.96351886433686!3d-29.477912192249224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x951c6322c02bf62d%3A0x76e7f3554c1b9a32!2sGuns%20Muni%C3%A7%C3%B5es%20e%20Treinamentos%2C%20Av.%20Augusto%20Frederico%20Markus%2C%20800%20das%20-%20Ind%C3%BAstrias%2C%20Estrela%20-%20RS%2C%2095880-000!3m2!1d-29.477859799999997!2d-51.9624811!5e0!3m2!1spt-BR!2sbr!4v1627330961389!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0; width: 100%" allowfullscreen="" loading="lazy"></iframe>
+            {# Attendence #}
+            <div id="attendance-container">
+                <h1>ATENDIMENTO</h1>
+                <div id="office-hours-container">
+                    <div class="office-hours">
+                        <div>
+                            <h2>TERÇA</h2>
+                            <p>18h00 às 22h00</p>
+                        </div>
+                        <div>
+                            <h2>QUARTA</h2>
+                            <p>18h00 às 22h00</p>
+                        </div>
+                        <div>
+                            <h2>QUINTA</h2>
+                            <p>18h00 às 22h00</p>
+                        </div>
+                    </div>
+                    <div class="office-hours">
+                        <div>
+                            <h2>SEXTA</h2>
+                            <p>18h00 às 22h00</p>
+                        </div>
+                        <div>
+                            <h2>SÁBADO</h2>
+                            <p>13h30 às 17h30</p>
+                        </div>
+                    </div>
+                    <div class="office-hours">
+                        <div>
+                            <h2>DOMINGO</h2>
+                            <p>Fechado</p>
+                        </div>
+                        <div>
+                            <h2>SEGUNDA</h2>
+                            <p>Fechado</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="google-maps-container">
+                    <iframe id="google-maps" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1787.5471026168784!2d-51.96351886433686!3d-29.477912192249224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x951c6322c02bf62d%3A0x76e7f3554c1b9a32!2sGuns%20Muni%C3%A7%C3%B5es%20e%20Treinamentos%2C%20Av.%20Augusto%20Frederico%20Markus%2C%20800%20das%20-%20Ind%C3%BAstrias%2C%20Estrela%20-%20RS%2C%2095880-000!3m2!1d-29.477859799999997!2d-51.9624811!5e0!3m2!1spt-BR!2sbr!4v1627330961389!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0; width: 100%" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </main>
 
         {# Footer #}
         <div id="footer" class="flex column">

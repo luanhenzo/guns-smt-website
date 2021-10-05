@@ -36,25 +36,22 @@ ul {
     list-style: none;
 }
 
-/* Identifies */
+/* Navigation bar */
 #nav-bar {
     display: flex;
     height: 10vh;
     background: #103c66;
     padding: 0 1em;
 }
-
 #brand {
     display: flex;
     height: auto;
     width: auto;
     padding: 0.5em;
 }
-
 #hamburger-menu {
     display: none;
 }
-
 #nav {
     display: flex;
     justify-content: space-between;
@@ -62,11 +59,9 @@ ul {
     width: 100%;
     height: 100%;
 }
-
 #nav-btns {
     display: flex;
 }
-
 #nav-btns a {
     display: flex;
     justify-content: center;
@@ -79,26 +74,23 @@ ul {
     padding: 1em;
     transition: 0.3s;
 }
-
 #nav-btns>a:hover {
     background: white;
     color: #103c66;
 }
-
 #social-medias {
     display: flex;
     align-items: center;
 }
-
 #social-medias a {
     height: 100%;
     padding: 1vh;
 }
-
 #social-medias a img {
     height: 100%;
 }
 
+/* Intro banner */
 #intro-container {
     display: flex;
     justify-content: center;
@@ -107,60 +99,42 @@ ul {
     background-color: white;
     padding: 2vh 0;
 }
-
 #intro-banner {
     width: 100%;
     max-width: 88vh;
     height: auto;
 }
 
-#call-us {
-    display: flex;
-    color: whitesmoke;
+/* Attendance */
+#atendimento {
     height: 100vh;
+    color: white;
+    display: flex;
+    gap: 1em;
+    margin: 0 1em;
+}
+#atendimento > * {
+    flex-basis: 100%;
+    padding: 1em 0;
 }
 
-#call-us-title-container {
+/* Call us */
+#call-us-container {
     display: flex;
     flex-direction: column;
-    padding-inline-start: 1em;
-    position: relative;
-    background: url("../images/call-us-bg.jpeg") no-repeat center;
-    background-size: cover;
-    flex: 1;
+    align-items: stretch;
 }
-
-#call-us-title-container::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(0, 0, 0, 0.6);
+#call-us-container > h1 {
+    text-align: center;
 }
-
-#call-us-title {
-    position: relative;
-    align-self: flex-start;
-    border-inline-start: 4px whitesmoke solid;
-    padding-inline-start: 1rem;
-    background: rgba(0,0,0,0.6);
-    line-height: 1;
-}
-
 #call-us-form {
-    width: 60%;
     display: flex;
     flex-direction: column;
-    padding: 1em;
-    flex: 2;
+    overflow: auto;
 }
-
 #description {
     height: 100%;
 }
-
 #call-us-submit {
     align-self: flex-start;
     font-size: 1.6rem;
@@ -169,17 +143,39 @@ ul {
     border-radius: 1rem;
     border: 1px whitesmoke solid;
 }
-
 #call-us-submit:hover {
     color: black;
 }
 
-#google-maps {
-    margin: 0;
-    flex: 2;
-    height: 50vh;
+/* Attendance */
+#attendance-container {
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+#office-hours-container {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.office-hours {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
+/* Maps */
+#google-maps-container {
+    height: 50%;
+}
+#google-maps {
+    height: 100%;
+}
+
+/* Footer */
 #footer {
     background: #103c66;
 }
